@@ -11,7 +11,7 @@ var orm = {
         });
     },
     insertOne: function(tableInput, cols, vals, cb) {
-      var queryString = "INSERT INTO" + tableInput + " (" + cols.toString() + ") VALUES (??)";
+      var queryString = "INSERT INTO " + tableInput + " (" + cols.toString() + ") VALUES (?, ?)";
       connection.query(queryString, vals, function(err, result) {
         if (err) {
           throw err;
