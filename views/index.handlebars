@@ -1,23 +1,27 @@
 <h1> Eat Da Burger! </h1>
 
-<h2>Burgers That Have Yet to be Devoured: </h2>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="row">
+  <div class="col-6">
+    <h2>Burgers That Have Yet to be Devoured: </h2>
+    <ul>
+      {{#each burgers}} 
+        {{#unless devoured}} 
+          {{> burgers/burger-block devour=true}} 
+        {{/unless}} {{/each}}
+    </ul>
+  </div>
 
-<h2>Devoured Burgers:</h2>
+  <div class="col-6">
+    <h2>Devoured Burgers:</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+    <ul>
+      {{#each burgers}} 
+        {{#if devoured}} 
+          {{> burgers/burger-block devour=false}} 
+        {{/if}} {{/each}}
+    </ul>
+  </div>
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
