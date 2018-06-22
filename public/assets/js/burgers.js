@@ -43,4 +43,6 @@ $(function(){
         );
     });
 
+    $.ajax("/api/burgers" +id)
+
 });
