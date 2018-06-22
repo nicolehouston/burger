@@ -1,0 +1,20 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/68/In-N-Out_Burger_cheeseburgers.jpg");
+    background-size: 100%;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.change-devour {
+    margin: 10px;
+    background-color: tomato;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
